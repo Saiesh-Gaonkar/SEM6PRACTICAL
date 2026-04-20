@@ -1,0 +1,71 @@
+[
+  {
+    "id": "f2a2b3c4d5e6f7a8",
+    "type": "tab",
+    "label": "exp11_led_dashboard",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "ui_tab1a2b3c4d5e6f7a8",
+    "type": "ui_tab",
+    "name": "IoT",
+    "icon": "dashboard",
+    "disabled": false,
+    "hidden": false
+  },
+  {
+    "id": "ui_group1a2b3c4d5e6f7a",
+    "type": "ui_group",
+    "name": "Controls",
+    "tab": "ui_tab1a2b3c4d5e6f7a8",
+    "order": 1,
+    "disp": true,
+    "width": "6",
+    "collapse": false
+  },
+  {
+    "id": "switch1a2b3c4d5e6f70",
+    "type": "ui_switch",
+    "z": "f2a2b3c4d5e6f7a8",
+    "name": "LED",
+    "label": "LED",
+    "group": "ui_group1a2b3c4d5e6f7a",
+    "order": 1,
+    "width": 0,
+    "height": 0,
+    "passthru": true,
+    "decouple": "false",
+    "topic": "led",
+    "style": "",
+    "onvalue": "true",
+    "onvalueType": "bool",
+    "onicon": "",
+    "oncolor": "",
+    "offvalue": "false",
+    "offvalueType": "bool",
+    "officon": "",
+    "offcolor": "",
+    "x": 200,
+    "y": 160,
+    "wires": [
+      [
+        "gpio1a2b3c4d5e6f708"
+      ]
+    ]
+  },
+  {
+    "id": "gpio1a2b3c4d5e6f708",
+    "type": "rpi-gpio out",
+    "z": "f2a2b3c4d5e6f7a8",
+    "name": "GPIO 17 (Pin 11)",
+    "pin": "11",
+    "set": true,
+    "level": "0",
+    "freq": "",
+    "out": "out",
+    "x": 460,
+    "y": 160,
+    "wires": []
+  }
+]
